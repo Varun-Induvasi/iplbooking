@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Match</title>   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+      <body>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <center>
+                <br />
+                <br />
+                <h1>Create Match</h1>
+              </center>
+              <form id="createTrainForm">
+                <div class="form-group">
+                  <label for="trainName">Match Name:</label>
+                  <input type="text" class="form-control" id="trainName" />
+                </div>
+                <div class="form-group">
+                  <label for="trainId">Match ID:</label>
+                  <input type="text" class="form-control" id="trainId" />
+                </div>
+                <div class="form-group">
+                  <label for="from">From:</label>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-default dropdown-toggle"
+                      type="button"
+                      id="fromDropdown"
+                      data-toggle="dropdown"
+                    >
+                      Select Station
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="fromDropdown">
+                      <li><a href="#" class="fromStation">Chennai</a></li>
+                      <li><a href="#" class="fromStation">Bangalore</a></li>
+                      <li><a href="#" class="fromStation">Delhi</a></li>
+                      <li><a href="#" class="fromStation">Mumbai</a></li>
+                      <li><a href="#" class="fromStation">Kerala</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="to">To:</label>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-default dropdown-toggle"
+                      type="button"
+                      id="toDropdown"
+                      data-toggle="dropdown"
+                    >
+                      Select Station
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="toDropdown">
+                      <li><a href="#" class="toStation">Chennai</a></li>
+                      <li><a href="#" class="toStation">Bangalore</a></li>
+                      <li><a href="#" class="toStation">Delhi</a></li>
+                      <li><a href="#" class="toStation">Mumbai</a></li>
+                      <li><a href="#" class="toStation">Kerala</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="date">Date(DD/MM/YY):</label>
+                  <input type="date" class="form-control" id="date" />
+                </div>
+                <div class="form-group">
+                  <label for="time">Time (HH:MM)</label>
+                  <input type="time" class="form-control" id="time" name="time" />
+                </div>
+                <br />
+              </form>
+              <a href="adminDashBoardPage.html">
+                <button type="submit" class="btn btn-primary btn-block">
+                  Create Match
+                </button>
+            </a>
+              <br />
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

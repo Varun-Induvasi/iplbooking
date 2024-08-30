@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <center>
+        <h1>Train Ticket Information</h1>
+        <div>
+            <a href="UserDashboardPage.html">
+                <button class="btn btn-primary">User Dashboard</button>
+            </a>
+            <a href="AdminDashboardPage.html">
+                <button class="btn btn-primary">Admin Dashboard</button>
+            </a>
+            </div>
+
+       <!--<a id="back-btn">
+                <button class="btn btn-primary">Go Back</button>
+            </a>-->
+            </center>
+            
+            <div class="container mt-3">
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-primary mr-3" id="trainDetailsButton"> Train Details </button>
+                </div>
+            </div>
+        
+            <div class="container mt-5" id="trainDetailsContainer">
+                <div class="border border-dark p-4">
+                  <form id="trainDetailsForm">
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="journeyFrom" placeholder="Journey From:"
+                          readonly
+                        />
+                        </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="journeyTo" placeholder="Journey To:"
+                         readonly
+                        />
+                        </div>
+                     </div>
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="trainName" placeholder="Train Name:"
+                          readonly
+                        />
+                        </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="journeyDate" placeholder="Journey Date:"
+                          readonly
+                        />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="trainId" placeholder="Train ID:"
+                          readonly
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" class="form-control" id="pnrNumber" placeholder="PNR Number:"
+                          readonly
+                        />
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="trainTime" placeholder="Train Time:"
+                      readonly
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <br/>
+          <div class="container mt-3">
+            <div class="d-flex align-items-center">
+              <button
+                type="button"
+                class="btn btn-primary mr-3"
+                id="passengerDetailsButton"
+              >
+                Passenger Details-1
+              </button>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <p class="mb-0">
+                Number of Passengers: <span id="numberOfPassengers">2</span>
+              </p>
+            </div>
+          </div>
+          <div class="container mt-5" id="passengerDetailsContainer">
+          </div>
+          <br/>
+          <div class="container mt-3">
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-primary mr-3">
+                Payment Details
+              </button>
+            </div>
+          </div>
+          <div class="container mt-5">
+            <div class="border border-dark p-4">
+              <form id="paymentDetailsForm">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="paymentMethod" placeholder="Payment Method:"
+                    readonly
+                  />
+                </div>
+                <br/>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="totalPrice" placeholder="Total Price:"
+                    readonly
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <br/>
+          <div class="container mt-3">
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-primary mr-3">
+                Other Details
+              </button>
+            </div>
+          </div>
+          <div class="container mt-5">
+            <div class="border border-dark p-4">
+              <form id="otherDetailsForm">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="passengerEmail" placeholder="Passenger Email:"
+                    readonly
+                  />
+                </div>
+                <br />
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="mobileNumber" placeholder="Mobile Number:"
+                    readonly
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <br/>
+    </body>
+</html>

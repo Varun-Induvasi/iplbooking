@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <center>
+                    <br>
+                    <br>
+                    <h3>Provide train details to view the tickets booked</h3>
+                </center>
+                <form id="ticketSearchForm">
+                    <div class="form-group">
+                        <label for="trainId">Match ID:</label>
+                        <input type="text" class="form-control" id="trainId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="from">From:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="fromDropdown" data-toggle="dropdown">
+                                Select Station
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="fromDropdown">
+                                <li><a href="#" class="fromStation">Chennai</a></li>
+                                <li><a href="#" class="fromStation">Bangalore</a></li>
+                                <li><a href="#" class="fromStation">Delhi</a></li>
+                                <li><a href="#" class="fromStation">Mumbai</a></li>
+                                <li><a href="#" class="fromStation">Kerala</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">To:</label>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="toDropdown" data-toggle="dropdown">
+                                Select Station
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="toDropdown">
+                                <li><a href="#" class="toStation">Chennai</a></li>
+                                <li><a href="#" class="toStation">Bangalore</a></li>
+                                <li><a href="#" class="toStation">Delhi</a></li>
+                                <li><a href="#" class="toStation">Mumbai</a></li>
+                                <li><a href="#" class="toStation">Kerala</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date (DD/MM/YY):</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time (HH:MM)</label>
+                        <input type="time" class="form-control" id="time" name="time" required>
+                    </div>
+                    <br>
+                    <a href="viewBookedDetailsPage.html">
+                    <button type="button" class="btn btn-primary btn-block">View Details</button>
+                    </a>
+                </form>
+                <br>
+                <div id="ticketDetails"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

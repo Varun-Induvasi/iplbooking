@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <center>
+        <h1>Search Movie</h1>
+        <br/>
+        <br/>
+        <br/>
+
+        <a href = "user_login_page.html">Search Movie</a>
+        <br/> 
+    </center> -->
+
+    <br />
+    <div class="container">
+        <h1>Search</h1>
+        <form id="train-form">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="from">From:</label>
+                    <div class="dropdown">
+                        <button 
+                        class="btn btn-default dropdown-toggle"
+                        type = "button"
+                        id="fromDropdown"
+                        data-toggle="dropdown"
+                        style="
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        "
+                    >
+
+                    City <span class="caret"></span>
+                    </button>
+                    <ul
+                        class="dropdown-menu"
+                        id="station-list-from"
+                        style="width: 100%"
+                    >
+
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label fro="to">To:</label>
+            <div class="dropdown">
+                <button
+                    class="btn btn-default dropdown-toggle"
+                    type="button"
+                    id="toDropdown"
+                    data-toggle="dropdown"
+                    style="
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        "
+                >
+                City <span class="caret"></span>
+            </button>
+            <ul
+                class="dropdown-menu"
+                id="station-list-to"
+                style="width: 100%"
+            >
+
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Delhi</a></li>
+                <li><a href="#">Mumbai</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<br/>
+<div class="row">
+    <div class="col-sm-3">
+        <input type="date" class="form-control" id="date" />
+    </div>
+    <div class="col-sm-9">
+        <a href="userLoginPage.html">
+        <button
+            type="button"
+            class="btn btn-primary"
+        >
+        Search
+    </button>
+          </a>
+</div>
+</div>
+<br/>
+
+<div class="row" id="error-message" style="display: none">
+    <div class="col-sm-12">
+        <div class="alert alert-danger">Train not found!</div>
+    </div>
+</div>
+</form>
+</div>
+<div id="train-details-container" class="container"></div>
+
+</body>
+</html>

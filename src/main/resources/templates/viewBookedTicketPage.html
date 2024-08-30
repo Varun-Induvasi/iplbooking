@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Booked Ticket</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- <h2>View Booked Ticket</h2> -->
+    <!-- <a href="viewBookedDetailPage.html">Show Details</a> -->
+
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col-6">
+                <h1 class="text-black">User</h1>
+            </div>
+            <div class="col-6 text-right">
+                <p class="text-primary">Date : 08/07/2024 <br> Time : 10:30 AM</p>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-between">
+                <p>
+                    Train Name :
+                    <span class="front-weight-bold">Satabdi Express #1234</span>
+                </p>
+                <p><strong>From:</strong> Chennai <strong>To:</strong> Bengaluru</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="border border-dark p-4">
+                    <div class="text-center mb-4">
+                        <button class="btn btn-primary">Tickets Booked</button>
+                        <a href="adminDashBoardPage.html">
+                            <button class="btn btn-default">Go Back</button>
+                        </a>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12  col-md-5" id="show-pnr-section"></div>
+                        <div class="col-sm-12  col-md-5" id="show-ticket-section"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center mb-4">
+                            Ticket Booking Information
+                        </h5>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <button class="btn btn-primary">
+                                        Total number of tickets booked
+                                    </button>
+                                    <button class="btn btn-success">60/80</button>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Ticket Booked by Class</th>
+                                            <th>Number of Tickets Booked</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sleeper</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3A</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2A</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1A</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <button class="btn btn-primary">
+                                        Number of Seats Available
+                                    </button>
+                                    <button class="btn btn-success">20/80</button>
+                                </div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Ticket Not Booked by Class</th>
+                                            <th>Number of Tickets Not Booked</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sleeper</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3A</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2A</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1A</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
